@@ -1,0 +1,33 @@
+name:                ega-toc-builder
+version:             0.1.0.0
+#synopsis:
+#description:
+homepage:            https://github.com/bhwang/ega-toc-builder#readme
+license:             BSD3
+author:              Brian Hwang
+maintainer:          bhwang@caltech.edu
+copyright:           2015 Brian Hwang
+category:            Mathematics, Algebraic Geometry
+extra-source-files:
+- README.md
+- CHANGELOG.md
+
+dependencies:
+  - base >= 4.7 && < 5
+  - lucid
+
+ghc-options:
+- -Wall
+- -Wcompat
+- -Widentities
+- -Wincomplete-record-updates
+- -Wincomplete-uni-patterns
+- -Wmissing-export-lists
+- -Wmissing-home-modules
+- -Wpartial-fields
+- -Wredundant-constraints
+
+executables:
+  ega-toc-builder:
+    source-dirs:      src
+    main:             Main.hs

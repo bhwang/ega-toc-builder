@@ -1,0 +1,31 @@
+cabal-version: 1.12
+
+-- This file has been generated from package.yaml by hpack version 0.34.4.
+--
+-- see: https://github.com/sol/hpack
+
+name:           ega-toc-builder
+version:        0.1.0.0
+category:       Mathematics, Algebraic Geometry
+homepage:       https://github.com/bhwang/ega-toc-builder#readme
+author:         Brian Hwang
+maintainer:     bhwang@caltech.edu
+copyright:      2015 Brian Hwang
+license:        BSD3
+license-file:   LICENSE
+build-type:     Simple
+extra-source-files:
+    README.md
+    CHANGELOG.md
+
+executable ega-toc-builder
+  main-is: Main.hs
+  other-modules:
+      Paths_ega_toc_builder
+  hs-source-dirs:
+      src
+  ghc-options: -Wall -Wcompat -Widentities -Wincomplete-record-updates -Wincomplete-uni-patterns -Wmissing-export-lists -Wmissing-home-modules -Wpartial-fields -Wredundant-constraints
+  build-depends:
+      base >=4.7 && <5
+    , lucid
+  default-language: Haskell2010
